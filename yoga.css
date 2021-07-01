@@ -1,0 +1,244 @@
+/* 
+File Name: yoga.css
+Date Submitted: 6/30/2021
+Author: Garrett Grahl
+Class: CIS 154
+Final Project: Path of the Light Yoga Studio 
+*/
+
+/* Use below line to troubleshoot problem areas */
+/* border: 3px dotted red; */
+
+/* NAVIGATION */
+nav { 
+     font-size: 1.25em; 
+     word-spacing: 1em;
+     background-color: #FFFFFF;  
+     padding: 1em;
+     padding-top: 0.5em;
+     padding-right: 0;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     text-align: right;
+     margin: 0;
+     z-index: 9999;
+}
+nav a {
+     text-decoration: none;
+     display: block;
+}
+nav a:link { 
+     color: #3F2860; 
+}
+nav a:visited { 
+     color: #497777; 
+}
+nav a:hover { 
+     color: #A26100; 
+}
+nav ul { 
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0;
+     font-size: 1.2em;
+     text-decoration: none; 
+     list-style-type: none; 
+}
+nav li {
+     width: 40%;
+     padding-top: 0;
+     padding-bottom: 0;
+     padding-left: 1em;
+     padding-right: 1em;
+     display: inline;
+}
+
+/* HEADER */
+header {
+     background-color: #40407A;
+     background-image: url(sunrise.jpg);
+     background-size: 100% 100%;
+     color: #fff;
+     font-size: 90%;
+     margin-top: 50px;
+     min-height: 200px;
+}
+header a { 
+     text-decoration: none; 
+}
+header a:link { 
+     color: #fff; 
+}
+header a:visited { 
+     color: #fff; 
+}
+header a:hover { 
+     color: #EDF5F5; 
+}
+
+/* BODY */
+* { 
+     box-sizing: border-box; 
+}
+body { 
+     margin: 0;
+     background-color: #3F2860;
+     color: #40407A;
+     font-family: Arial, Verdana, sans-serif; 
+}
+h2 { 
+     color: #3F2860; 
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p { 
+     font-size: .90em; 
+     /* text-indent: 3em; */
+}
+section {
+     padding-left: 0.5em;
+     padding-right: 0.5em;
+}
+table {
+     margin: auto;
+     width: 60%;
+     border: 1px solid #3F2860;
+     border-collapse: collapse;
+     margin-bottom: 1em;
+}
+td, th {
+     padding: 5px;
+     border: 1px solid #3F2860;
+}
+tr:nth-of-type(even) { background-color: #DBE8E9; }
+caption {
+     margin: 1em;
+     font-weight: bold;
+     font-size: 120%;
+}
+footer {
+     color: black;
+     font-size: .60em;
+     font-style: italic;
+     text-align: center;
+}
+
+/* CONTACT FORM */
+form {
+     display: grid;
+     grid-template-rows: auto;
+     /* grid-template-columns: 1fr; */
+     padding-left: 1em;
+     width: 80%;
+}
+input, textarea {
+     margin-bottom: .5em;
+}
+
+/* id= */
+#wrapper { 
+     background-color: #FFFFFF;
+     padding: 2em;
+   }
+#mathero {
+     background-image: url(yogamat.jpg);
+     background-repeat: no-repeat;
+     height: 300px;
+     background-size: cover;
+     display: none;
+}
+#loungehero {
+     background-image: url(yogalounge.jpg);
+     background-repeat: no-repeat;
+     height: 300px;
+     background-size: cover;
+     display: none;
+}
+#mobile {
+     display: inline;
+}
+#desktop {
+     display: none;
+}
+
+/* class= */
+.studio {
+     font-style: italic;
+}
+.home{
+     height: 20vh;
+     padding-top: 2em;
+     padding-left: 10%;
+}
+.content {
+     height: 20vh;
+     padding-top: 2em;
+     padding-left: 10%;
+}
+
+@media (min-width: 600px) {
+     nav ul {
+          flex-wrap: nowrap;
+          justify-content: flex-end;
+     }
+     nav li {
+          width: 7em;
+     }
+     section {
+          padding-left: 2em;
+          padding-right: 2em;
+     }
+     form {
+          display: grid;
+          grid-template-rows: auto;
+          grid-template-columns: 12em 1fr;
+          padding-left: 1em;
+          width: 60%;
+          grid-gap: 1em;
+     }
+     input[type="submit"] {
+          grid-column: 2 / 3; width: 9em;
+     }
+     label {
+          text-align: right;
+     }
+     #mathero {
+          display: block;
+          padding-bottom: 1em;
+     }
+     #loungehero {
+          display: block;
+          padding-bottom: 1em;
+     }
+     #flow {
+          display: flex;
+          flex-direction: row;
+     }
+     #mobile {
+          display: none;
+     }
+     #desktop {
+          display: inline;
+     }
+}
+
+@media (min-width: 1024px) {
+     header {
+          font-size: 120%;
+     }
+     .home {
+          height: 50vh;
+          padding-top: 5em;
+          padding-left: 8em;
+     }
+     .content {
+          height: 30vh;
+          padding-top: 1em;
+          padding-left: 8em;
+     }
+     #wrapper {
+          margin: auto;
+          width: 80%;
+     }
+}

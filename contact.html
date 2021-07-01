@@ -1,0 +1,61 @@
+<!-- File Name: contact.html -->
+<!-- Date Submitted: 6/30/2021 -->
+<!-- Author: Garrett Grahl -->
+<!-- Class: CIS 154 -->
+<!-- Final Project: Path of the Light Yoga Studio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Path of the Light Yoga Studio Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="yoga.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="content">
+   <h1><a href="index.html">Path of Light Yoga Studio</a></h1>
+  </header>
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- WRAPPER -->
+  <div id="wrapper">
+  <!-- MAIN -->
+  <main>
+    <h2>Contact Path of Light Yoga Studio</h2>
+    <p>Fill out the form below to contact Path of Light Yoga Studio. All information is required.</p>
+    <!-- CONTACT FORM -->
+    <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+     <label for="myName">Name:</label>
+     <input type="text" name="myName" id="myName" required placeholder="your first and last name">
+     <label for="myEmail">E-mail:</label>
+     <input type="text" name="myEmail" id="myEmail" required placeholder="you@yourdomain.com">
+     <label for="myRefer">How did you hear about us?</label>
+     <input type="text" name="myRefer" id="myRefer" list="referral">
+          <datalist id="referral">
+               <option value="Google"    label="Google">
+               <option value="Bing"      label="Bing">
+               <option value="Facebook"  label="Facebook">
+               <option value="Friend"    label="Friend">
+               <option value="Radio Ad"  label="Radio Ad">
+          </datalist>
+     <label for="myComments">Comments:</label>
+     <textarea name="myComments" id="myComments" rows="2" cols="20" required ></textarea>
+     <input type="submit" id="mySubmit" value="Send Now">
+   </form>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    Copyright &copy; 2020 Path of Light Yoga Studio<br>
+    <a href="mailto:garrett.grahl@ndus.edu">garrett.grahl@ndus.edu</a>
+  </footer>
+</div>
+</body>
+</html>
